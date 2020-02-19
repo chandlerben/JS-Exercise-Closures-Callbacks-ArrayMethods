@@ -161,8 +161,11 @@ function processContains(item, list, callback) {
  * [2] Invoking `processDuplicateFree` passing `[1,1,2,2,3]` and `(arr) => arr.length`,
  * should return 3.
 */
-function processDuplicateFree(/* CODE HERE ONLY AFTER COMPLETING ALL OTHER TASKS */) {
-  /* CODE HERE ONLY AFTER COMPLETING ALL OTHER TASKS */
+function processDuplicateFree(list, callback) {
+  const setFromArray = new Set(list)
+  const nonDupArray = Array.from(setFromArray)
+  return callback(nonDupArray)
+
 }
 
 /////////////// HIGHER-ORDER ARRAY METHODS ///////////////
